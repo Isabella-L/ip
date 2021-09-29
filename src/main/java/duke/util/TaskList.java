@@ -91,18 +91,6 @@ public class TaskList {
         }
     }
 
-    public ArrayList<String> searchList(String searchPhrase) {
-        ArrayList<String> searchResult = new ArrayList<>();
-        int count = 0;
-        for (Task t : tasks) {
-            if (t.isContain(searchPhrase)) {
-                count++;
-                searchResult.add(count + "." + t.toString());
-            }
-        }
-        return searchResult;
-    }
-
     public int getSize() {
         return tasks.size();
     }
