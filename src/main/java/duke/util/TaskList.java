@@ -7,7 +7,6 @@ import duke.task.Deadline;
 import duke.task.Event;
 import duke.task.Task;
 import duke.task.Todo;
-import duke.ui.PrintBot;
 
 import java.util.ArrayList;
 

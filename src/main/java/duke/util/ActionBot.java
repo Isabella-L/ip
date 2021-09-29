@@ -7,10 +7,7 @@ import duke.task.*;
 import duke.ui.ErrorReport;
 import duke.ui.PrintBot;
 
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 import static duke.ui.ErrorReport.alarm;
