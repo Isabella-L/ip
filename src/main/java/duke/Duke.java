@@ -7,6 +7,7 @@ import duke.util.TaskList;
 
 
 import java.io.IOException;
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -14,6 +15,7 @@ public class Duke {
     private TaskList tasks;
     private PrintBot ui;
     private Storage storage;
+
 
     public Duke (String filePath) {
         try {

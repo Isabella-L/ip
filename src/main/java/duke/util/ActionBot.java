@@ -8,8 +8,6 @@ import duke.ui.ErrorReport;
 import duke.ui.PrintBot;
 
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -31,6 +29,7 @@ public class ActionBot {
         this.tasks = tasks;
     }
 
+
     public void Activation() {
         System.out.println("Repeat after me : \n " +
                 "I solemnly swear that I am up to no good.");
@@ -38,7 +37,7 @@ public class ActionBot {
         String input = in.nextLine();
 
         int n = 0;
-        while (notActivated(input.trim())) {
+        while (notActivated(input)) {
             if (n == 4) {
                 n = 0;
             }
@@ -75,10 +74,6 @@ public class ActionBot {
 
         ui.line();
         switch (taskType) {
-        case "find":
-            ArrayList<String> searchResult = tasks.searchList(userInput[1]);
-            ui.searchList(searchResult);
-            break;
         case "hello":
             ui.hello();
             break;

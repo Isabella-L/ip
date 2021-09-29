@@ -31,10 +31,6 @@ public abstract class Task {
         }
     }
 
-    public boolean isContain (String searchPhrase) {
-        return description.contains(searchPhrase);
-    }
-
     public String toString() {
         return "[" + getDone() + "]" + description;
     }
